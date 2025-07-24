@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>💹 Login - FinanControl</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/responsive.css'>
+    <!-- uso de funtes -->
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/fonts/awesome/css/all.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/fonts/awesome/css/sharp-solid.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body class="login-page">
+    <!-- sección para crear el login -->
+    <header class="login-page__header">
+        <span class="fa-sharp fa-solid fa-piggy-bank login-page__icon"></span>
+        <h1 class="login-page__title">FinanControl</h1>
+        <p class="login-page__text">Controla tus finanzas.</p>
+        <p class="login-page__text">Proyecta tu futuro.</p>
+    </header>
+    <main class="login-page__main" role="main">
+        <div class="login-form-container">
+            <h2 class="login-form-container__title">Bienvenido</h2>
+            <form class="login-form" action="/ruta-destino" method="POST" id="myForm" aria-labelledby="login-title">
+                <div class="login-form__input-group">
+                    <label for="email" class="login-form__label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Correo Electrónico"
+                        class="login-form__input" aria-describedby="email-error" aria-invalid="false"
+                        autocomplete="email">
+                    <div id="email-error" class="error-message" aria-live="polite" style="display: none;"></div>
+                </div>
+                <div class="login-form__input-group">
+                    <label for="password" class="login-form__label">Contraseña:</label>
+                    <input type="password" id="password" name="password" required placeholder="Contraseña"
+                        class="login-form__input" aria-describedby="password-error" aria-invalid="false"
+                        autocomplete="current-password">
+                    <div id="password-error" class="error-message" aria-live="polite" style="display: none;"></div>
+                </div>
+                <div class="login-form__checkbox-group">
+                    <input type="checkbox" id="remember" name="remember" class="login-form__checkbox"
+                        aria-describedby="remember-description">
+                    <label for="remember" class="login-form__checkbox-label">Recordarme</label>
+                    <div id="remember-description" class="sr-only">Mantener la sesión iniciada en este dispositivo
+                    </div>
+                </div>
+                <button type="submit" class="btn login-form__button" aria-describedby="submit-description">
+                    Ingresar
+                </button>
+                <div id="submit-description" class="sr-only">Iniciar sesión con las credenciales proporcionadas
+                </div>
+            </form>
+            <a class="login-form-container__forgot-link" href="#" aria-label="Recuperar contraseña olvidada">¿Olvidaste
+                tu contraseña?</a>
+            <p class="login-page__register-text">¿No tienes cuenta?
+                <a href="#" class="login-page__register-link" aria-label="Crear nueva cuenta">Registrate</a>
+            </p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
